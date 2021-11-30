@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: #f2f2f2;
+	font-family: "Roboto", sans-serif;
+}
+header {
+	background-color: #303f9f;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 5%;
+}
+.contenedor-tabla {
+	padding: 10px;
+	margin: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 3px grey;
+}
+
+table {
+	table-layout: fixed;
+	font-size: 10px;
+	width: 100%;
+}
+caption {
+	color: #303f9f;
+	font-family: "Roboto", sans-serif;
+	font-size: 45px;
+	line-height: 70px;
+}
+th {
+	color: #f1faee;
+	background-color: #303f9f;
+}
+/*Selector encargado de pintar los renglones pares e inparaes
+    usando la funcion nth-child() pasando como parametro los atributos
+    de los reglones pares es "even" para los impares es "odd"
+    */
+
+/*Para los reglones pares*/
+tr:nth-child(even) {
+	background-color: #f1faee;
+}
+/*Para los renglones inpares*/
+tr:nth-child(odd) {
+	background-color: #a8dadc;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}

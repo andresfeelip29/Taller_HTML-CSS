@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 3</title>
+		<link rel="stylesheet" href="/css/estilos_ejercicio3.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Formulario</h1>
+		</header>
+		<section>
+			<div class="contenedor-formulario">
+				<div class="envoltura">
+					<form class="formulario" action="desarrollo_web" method="post">
+						<table>
+							<caption>
+								Formulario
+							</caption>
+							<tr>
+								<td>
+									<label for="num_max_10"
+										>Campo numerico(max 10 caracteres)</label
+									>
+								</td>
+								<td>
+									<input
+										type="number"
+										name="num_max_10"
+										id="num_max_10"
+										maxlength="10"
+										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2">
+									<label for="txt_max_40_2">Campo texto(max 40 caracteres)</label>
+								</td>
+								<td>
+									<input
+										type="text"
+										name="txt_max_40"
+										id="txt_max_40_2"
+										maxlength="40"
+										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input
+										type="text"
+										name="txt_max_40"
+										id="txt_max_40_1"
+										maxlength="40"
+										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="text_multi"
+										>Campo texto multilinea(max 200 caracteres)</label
+									>
+								</td>
+								<td>
+									<textarea
+										name="text_multi"
+										id="text_multi"
+										rows="3"
+										maxlength="200"
+										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+									></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="fecha">Fecha:</label></td>
+								<td><input type="date" name="fecha" id="fecha" /></td>
+							</tr>
+							<tr>
+								<td><label for="hora">Hora</label></td>
+								<td>
+									<input type="time" name="hora" id="hora" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="casilla">Seleccion casilla</label>
+								</td>
+								<td>
+									<input
+										type="checkbox"
+										name="casilla"
+										id="casilla"
+										value="casilla"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3">
+									<label for="seleccion">seleccion una opcion</label>
+								</td>
+								<td>
+									<input
+										type="radio"
+										name="seleccion"
+										id="opcion1"
+										value="opcion1"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input
+										type="radio"
+										name="seleccion"
+										id="opcion2"
+										value="opcion2"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input
+										type="radio"
+										name="seleccion"
+										id="opcion3"
+										value="opcion3"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3"><label for="casilla">Seleccion un color</label></td>
+								<td>
+									<input type="checkbox" name="rojo" id="rojo" value="casilla1" />
+									<label for="rojo">Rojo</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input
+										type="checkbox"
+										name="Amarillo"
+										id="Amarillo"
+										value="Amarillo"
+									/>
+									<label for="Amarillo">Amarillo</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="expandir">
+									<input type="checkbox" name="Verde" id="Verde" value="Verde" />
+									<label for="Verde">Verde</label>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="correo">Correo</label></td>
+								<td><input type="email" name="correo" id="correo" /></td>
+							</tr>
+							<tr>
+								<td><label for="opciones">Seleccion una opcion</label><br /></td>
+								<td>
+									<select name="opciones" id="opciones">
+										<option value="Opcion1">Opcion1</option>
+										<option value="Opcion2">Opcion2</option>
+										<option value="Opcion3">Opcion3</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="opciones">Seleccion multiple opciones</label><br />
+								</td>
+								<td>
+									<select multiple name="opciones" id="opciones">
+										<option value="Opcion1">Opcion1</option>
+										<option value="Opcion2">Opcion2</option>
+										<option value="Opcion3">Opcion3</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="texto_autompletado"
+										>Campo texto Autocompletado</label
+									>
+								</td>
+								<td>
+									<datalist id="autompletado">
+										<option value="Hola"></option>
+										<option value="texto"></option>
+										<option value="covid"></option>
+										<option value="monteria"></option>
+										<option value="desarrolo"></option>
+										<option value="diseño web"></option>
+										<option value="formulario"></option>
+										<option value="campo"></option>
+										<option value="autompletado"></option>
+									</datalist>
+									<input
+										type="text"
+										name="texto_autompletado"
+										id="texto_autompletado"
+										autocomplete="on"
+										list="autompletado"
+									/>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

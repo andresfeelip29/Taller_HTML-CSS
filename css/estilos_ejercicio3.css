@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+table {
+	table-layout: auto;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	background-color: #303f9f;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.envoltura {
+	width: 90%;
+	max-width: 630px;
+	padding: 40px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 0px 0px 3px grey;
+}
+
+.contenedor-formulario {
+	width: 100%;
+	color: #f2f2f2;
+	padding: 50px;
+}
+
+.contenedor-formulario .formulario {
+	width: 100%;
+	margin: auto;
+}
+
+.contenedor-formulario .formulario .input-group {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.contenedor-formulario .envoltura * {
+	border: 0.5px solid black;
+	color: black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.contenedor-formulario .formulario caption {
+	text-align: center;
+	background: #303f9f;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.contenedor-formulario .formulario input[type="submit"] {
+	background: #303f9f;
+	border-radius: 2px;
+	border: 2px solid #f2f2f2;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	padding: 15px;
+	width: 100%;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.contenedor-formulario .formulario input[type="submit"]:hover {
+	background: #1976d2;
+}

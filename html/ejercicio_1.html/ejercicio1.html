@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 1</title>
+		<link rel="stylesheet" href="/css/estilos_ejercicio1.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Formulario</h1>
+		</header>
+		<section>
+			<div class="contenedor-formulario">
+				<div class="envoltura">
+					<form class="formulario" action="desarrollo_web" method="post">
+						<legend>CIFRAS COVID-19 COLOMBIA</legend>
+						<div>
+							<div class="input-group">
+								<label for="fecha">Fecha:</label>
+								<input type="date" name="fecha" id="fecha" />
+							</div>
+							<div class="input-group">
+								<label for="departamento">Departamento:</label>
+								<select name="departamento" id="departamento">
+									<option value="Antioquia">Antioquia</option>
+									<option value="Atlantico">Atlantico</option>
+									<option value="Bogota, D.C.">Bogota, D.C.</option>
+									<option value="Bolivar">Bolivar</option>
+									<option value="Boyacá">Boyacá</option>
+									<option value="Caldas">Caldas</option>
+									<option value="Cauca">Cauca</option>
+									<option value="Cesar">Cesar</option>
+									<option value="Cundinamarca">Cundinamarca</option>
+									<option value="Huila">Huila</option>
+									<option value="Magdalena">Magdalena</option>
+									<option value="Meta">Meta</option>
+									<option value="Nariño">Nariño</option>
+									<option value="Nte de Santander">Nte de Santander</option>
+									<option value="Quindio">Quindio</option>
+									<option value="Risaralda">Risaralda</option>
+									<option value="Santander">Santander</option>
+									<option value="Tolima">Tolima</option>
+									<option value="Valle del cauca">Valle del cauca</option>
+									<option value="Casanare">Casanare</option>
+									<option value="San Andrés">San Andrés</option>
+								</select>
+							</div>
+							<div class="input-group">
+								<label for="total_casos_dia">Total Casos/Dia</label>
+								<input type="number" name="total_casos_dia" id="total_casos_dia" />
+							</div>
+							<div class="input-group">
+								<table>
+									<tr>
+										<td rowspan="2">Genero</td>
+										<td><label for="hombres">Hombre</label></td>
+										<td><input type="number" name="hombres" id="hombres" /></td>
+									</tr>
+									<tr>
+										<td><label for="mujeres">Mujeres</label></td>
+										<td><input type="number" name="mujeres" id="mujeres" /></td>
+									</tr>
+								</table>
+							</div>
+							<div class="input-group">
+								<table>
+									<tr>
+										<td rowspan="2">Edad</td>
+										<td><label for="menor_49años">Menor de 49 años</label></td>
+										<td>
+											<input
+												type="number"
+												name="menor_49años"
+												id="menor_49años"
+											/>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="mayor_50años">Mayor de 50 años</label></td>
+										<td>
+											<input
+												type="number"
+												name="mayor_50años"
+												id="mayor_50años"
+											/>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="input-group">
+								<table>
+									<tr>
+										<td rowspan="3">Causa</td>
+										<td><label for="importado">Importado(Viaje)</label></td>
+										<td>
+											<input type="number" name="importado" id="importado" />
+										</td>
+									</tr>
+									<tr>
+										<td><label for="relacionado">Relacionado</label></td>
+										<td>
+											<input
+												type="number"
+												name="relacionado"
+												id="relacionado"
+											/>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="en_estudio">En estudio</label></td>
+										<td>
+											<input
+												type="number"
+												name="en_estudio"
+												id="en_estudio"
+											/>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="input-group">
+								<table>
+									<tr>
+										<td rowspan="2">Manejo</td>
+										<td><label for="casa">Casa</label></td>
+										<td><input type="number" name="casa" id="casa" /></td>
+									</tr>
+									<tr>
+										<td><label for="hospital_uci">Hospital UCI</label></td>
+										<td>
+											<input
+												type="number"
+												name="hospital_uci"
+												id="hospital_uci"
+											/>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="input-group">
+								<label for="recuperados">Recuperados -Dia de Reporte</label>
+								<input type="number" name="recuperados" id="recuperados" />
+							</div>
+							<div class="input-group">
+								<table>
+									<tr>
+										<td rowspan="3">Descesos</td>
+										<td><label for="cantidad_descesos">Cantidad</label></td>
+										<td>
+											<input
+												type="number"
+												name="cantidad_descesos"
+												id="cantidad_descesos"
+											/>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="ciudad">Ciudad</label></td>
+										<td>
+											<input type="text" name="ciudad" id="ciudad" />
+										</td>
+									</tr>
+									<tr>
+										<td><label for="hora">Hora</label></td>
+										<td>
+											<input type="time" name="hora" id="hora" />
+										</td>
+									</tr>
+								</table>
+							</div>
+							<input type="submit" id="btn-submit" value="Enviar" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
