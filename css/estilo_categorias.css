@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #f2f2f2;
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	background-color: #303f9f;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 1%;
+	display: flex;
+	justify-content: center;
+}
+
+div.contenedor a {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.card_certificacion_profesional {
+	width: 25%;
+	margin: 10px;
+	position: relative;
+	-webkit-box-shadow: 0 0px 4px #777, 0 0 20px #ccc inset;
+	-moz-box-shadow: 0 0px 4px #777, 0 0 20px #ccc inset;
+	box-shadow: 0 0px 4px #777, 0 0 20px #ccc inset;
+	border-bottom: 3px solid crimson;
+}
+
+.card_cursos_verificados {
+	width: 25%;
+	margin: 10px;
+	position: relative;
+	-webkit-box-shadow: 0 0px 4px #777, 0 0 20px #ccc inset;
+	-moz-box-shadow: 0 0px 4px #777, 0 0 20px #ccc inset;
+	box-shadow: 0 0px 4px #777, 0 0 20px #ccc inset;
+	border-bottom: 3px solid green;
+}
+
+.imagen_card {
+	display: flex;
+	flex-direction: column;
+	min-height: 300px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.estado_certificacion_profesional {
+	display: flex;
+	justify-content: center;
+	background-color: crimson;
+	color: white;
+	font-size: 10px;
+}
+
+.estado_verificado {
+	display: flex;
+	padding-right: 30px;
+	justify-content: flex-end;
+	background-color: green;
+	color: white;
+	font-size: 10px;
+}
+
+div.estado_verificado div img {
+	display: flex;
+	flex-direction: row;
+	max-height: 25px;
+	position: absolute;
+}
+.texto {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+div.texto h5,
+p {
+	padding: 1px;
+	font-weight: lighter;
+}
+.texto_pie {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 10px;
+}
